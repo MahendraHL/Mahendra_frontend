@@ -1,0 +1,13 @@
+.btnView{
+    color: white;
+    width: 100px;
+    background-color: transparent;
+    border-color: white;
+}
+.btnView:active{
+    transform: scale(2s);
+    background-color: rgb(18, 96, 213);
+}
+.btnView:hover{
+    background-color: rgb(23, 23, 45);
+}
