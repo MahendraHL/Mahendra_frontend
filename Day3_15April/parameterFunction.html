@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //instead of passing all parameters in a single func we can create arraow func and pass single values so that we can reduce complexity of the function
+        let printAll=(a)=>{
+            return (b)=>{
+                return (c)=>{
+                    console.log(a+"/"+b+"/"+c);
+                }
+            }
+        }
+
+        let day=printAll(10);
+        let month=day(2);
+        month(24)
+
+    </script>
+</body>
+</html>

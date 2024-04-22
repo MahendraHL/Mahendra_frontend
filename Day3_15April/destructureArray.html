@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1={
+            id:1,
+            name:"oliver",
+            age:22,
+            address:{
+                place:"Mysore",
+                state:"karnataka"
+            }
+        }
+
+
+        //destructuring an array
+        const{name: nm}=p1;
+        console.log(nm)
+
+        let arr=[1,2,3,456,67]
+        const [a,b,c]=arr;
+        console.log(b);
+    </script>
+</body>
+</html>

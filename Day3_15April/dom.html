@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Technologies</h1>
+        <ul id="list">
+            <li class="list-items">Html</li>
+            <li class="list-items">Css</li>
+            <li class="list-items">Javascript</li>
+            <li class="list-items">Bootstarp</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="boxes box1">
+            <h2 class="heading">Example 1</h2>
+            <button class="btn-1" onclick="alert('clicked')">Click me</button>
+        </div>
+        <div class="boxes box1">
+            <h2 class="heading">Example 2</h2>
+            <button class="btn-2">Click me</button>
+        </div>
+        <div class="boxes box1">
+            <h2 class="heading">Example 3</h2>
+            <button class="btn-3" onclick="alert('clicked')">Click me</button>
+        </div>
+
+    </div>
+
+    <script>
+        const heading=document.getElementById('heading');
+        console.log(heading);
+
+
+        const listItems=document.getElementsByClassName("list-items");
+        console.log(listItems)
+
+
+        const query=document.querySelector("div")
+        console.log(query);
+
+
+        const queryAll=document.querySelectorAll("div")
+        console.log(queryAll);
+
+
+        const array=document.querySelectorAll("#list")
+        for (let index = 0; index < array.length; index++) {
+            array[index].style.color="blue";
+        }
+
+
+        const ul=document.querySelector('ul')
+        const li=document.createElement("li")
+        console.log(ul);
+        ul.append(li)
+
+        li.innerText="core java" // top add to list already exists
+
+        li.setAttribute("class","list-items")
+        console.log(ul.nextElement)
+
+
+
+        const button=document.querySelector(".btn-2");
+        function handleClick(){
+            alert("second button clicked");
+        }
+        button.addEventListener("click",handleClick)
+
+
+        const over=document.querySelector(".btn-3");
+            function handleOver(){
+                over.style.color="blue"
+            }
+            over.addEventListener("mouseover",handleOver);
+            </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        #bb {
+            width: 150px;
+            height: 200px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 80px;
+            border: 0px transparent;
+            color: gainsboro;
+            background-color: gainsboro;
+            align-items: center;
+        }
+
+        .btndiv {
+            border-radius: 100%;
+            background-color: grey;
+            height: 100px;
+            width: 100px;
+            align-content: center;
+            position: relative;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .container textarea {
+            display: block;
+            width: 250px;
+            resize: vertical;
+        }
+
+        .container .btn {
+            padding: 10px 20px;
+            font-size: 10px;
+            position: absolute;
+            left: 195px;
+            bottom: 30px;
+            border: 1PX solid black;
+           
+           
+            /* <==== */
+        }
+        textarea::placeholder{
+            top:10
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <div class="container">
+        <textarea rows="4" placeholder="enter your name"></textarea>
+        <button type="submit" class="btn"> Save </button>
+    </div><br><br>
+
+    <button id="bb">
+        <center>
+            <div class="btndiv">+</div>
+        </center>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .main{
+            text-align: center;
+        }
+        .center{
+            margin: auto;
+            background-color: white;
+            width: 470px;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+        }
+        .inner{
+            padding: 15px;
+        }
+        .btn{
+            background-color: blue;
+            color: aliceblue;
+            border: transparent;
+            width: 200px;
+            height: 30px;
+            border-radius: 40px;
+            position: absolute;
+            margin-bottom: 30px;
+            margin-left: 135px;
+        }
+        #first{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #second{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="main">
+        <h2>
+            Connect With Our Digital Marketing Experts
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat architecto exercitationem neque</p><br><br><br><br>
+    </section>
+    <div class="center" id="first">
+        <div  class="inner">
+            <label for="Name">Name</label><br>
+            <input type="text" name="Name" id="Name" placeholder="Enter your Name"><br><br>
+            <label for="Phone">phn</label><br>
+           <input type="tel" name="phn" id="phn" placeholder="Enter your phone number"><br><br>
+            <label for="emial">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your mail id"><br><br>
+        </div>
+        <div class="inner">
+            <label for="mess">Message</label><br>
+            <textarea name="mess" id="mess" cols="30" rows="10"></textarea>
+        </div> 
+    </div>
+    <div class="center" id="second"><button class="btn">Get started</button></div>
+</body>
+</html>
